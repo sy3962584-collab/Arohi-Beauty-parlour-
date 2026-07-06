@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GlowUp Makeup Kit</title>
+    <style>
+        /* Basic Reset and Styling */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #fcf8f8;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Navigation Bar */
+        header {
+            background-color: #fff;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #d4a373;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #555;
+            font-weight: 600;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: #d4a373;
+        }
+
+        /* Hero Section */
+        .hero {
+            text-align: center;
+            padding: 60px 20px;
+            background: linear-gradient(135deg, #fefae0, #faedcd);
+        }
+
+        .hero h1 {
+            font-size: 40px;
+            color: #4a3b32;
+            margin-bottom: 10px;
+        }
+
+        /* Main Content Container */
+        .container {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        /* Product Section */
+        .product-section {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 40px;
+            background: #fff;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            margin-bottom: 60px;
+        }
+
+        .product-image {
+            flex: 1;
+            min-width: 300px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #eaeaea;
+            border-radius: 8px;
+            min-height: 400px;
+            color: #888;
+            font-weight: bold;
+        }
+
+        .product-info {
+            flex: 1;
+            min-width: 300px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .product-title {
+            font-size: 32px;
+            color: #333;
+            margin-bottom: 15px;
+        }
+
+        .product-description {
+            font-size: 16px;
+            color: #666;
+            margin-bottom: 20px;
+        }
+
+        .warranty-box {
+            background-color: #fff1e6;
+            border-left: 5px solid #d4a373;
+            padding: 15px;
+            margin-bottom: 25px;
+            border-radius: 4px;
+        }
+
+        .warranty-box h4 {
+            color: #d4a373;
+            margin-bottom: 5px;
+        }
+
+        /* About Section */
+        .about-section {
+            background-color: #fff;
+            padding: 40px 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            margin-bottom: 60px;
+            text-align: center;
+        }
+
+        .about-section h2 {
+            color: #4a3b32;
+            margin-bottom: 15px;
+            font-size: 28px;
+        }
+
+        /* Footer / Contact Section */
+        footer {
+            background-color: #4a3b32;
+            color: #fff;
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        footer h3 {
+            margin-bottom: 15px;
+            font-weight: 400;
+        }
+
+        .contact-btn {
+            display: inline-block;
+            background-color: #d4a373;
+            color: white;
+            padding: 12px 30px;
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: bold;
+            font-size: 18px;
+            transition: background 0.3s, transform 0.2s;
+            margin-top: 10px;
+        }
+
+        .contact-btn:hover {
+            background-color: #c69363;
+            transform: translateY(-2px);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">GlowKit</div>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#product">Product</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Header -->
+    <section class="hero">
+        <h1>Unveil Your Natural Radiance</h1>
+        <p>Premium quality products curated just for your daily glam.</p>
+    </section>
+
+    <div class="container">
+
+        <!-- Product Section -->
+        <section id="product" class="product-section">
+            <!-- Product Image Placeholder -->
+            <div class="product-image">
+                <!-- Replace 'your-image-url.jpg' with your actual image file name later -->
+                <img src="https://via.placeholder.com/400x400?text=Your+Makeup+Kit+Photo" alt="Ultimate Glow Makeup Kit" style="width:100%; height:100%; object-fit:cover; border-radius: 8px;">
+            </div>
+
+            <!-- Product Info -->
+            <div class="product-info">
+                <h2 class="product-title">The Ultimate Glow Makeup Kit</h2>
+                <p class="product-description">
+                    Elevate your beauty routine with our all-in-one professional makeup kit. Featuring highly pigmented eyeshadows, flawless setting powders, long-lasting lip shades, and premium blending brushes. Perfect for both beginners and professional artists. Cruelty-free and dermatologically tested.
+                </p>
+
+                <!-- Warranty Information -->
+                <div class="warranty-box">
+                    <h4>✨ 1-Year Authenticity & Quality Warranty</h4>
+                    <p>We guarantee 100% authentic products. If you experience any formulation or packaging defects within 12 months, we will offer a hassle-free replacement.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about-section">
+            <h2>About Our Brand</h2>
+            <p style="max-width: 800px; margin: 0 auto; color: #555;">
+                Founded with a vision to make premium beauty accessible to everyone, we curate high-performance makeup kits that empower you to express your true self. We believe beauty should be fun, effortless, and safe for your skin.
+            </p>
+        </section>
+
+    </div>
+
+    <!-- Contact Section / Footer -->
+    <footer id="contact">
+        <h3>Have Questions or Want to Order?</h3>
+        <p>Call or WhatsApp us directly by clicking the button below:</p>
+        <!-- Clickable Phone Number Link -->
+        <a href="tel:9172378567" class="contact-btn">📞 Call 9172378567</a>
+        <p style="margin-top: 25px; font-size: 14px; opacity: 0.7;">&copy; 2026 GlowKit Beauty. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
